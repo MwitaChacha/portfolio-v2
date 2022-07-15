@@ -31,7 +31,7 @@ const Home = () => {
         <motion.div
           animate={{ opacity: 1 }}
           initial={{ opacity: 0}}
-          transition={{ duration: 1 }}
+          transition={{ duration: 3 }}
           className="text-center mt-40 px-10"
         >
           <h5 className="text-gray-300 text-2xl">"{quote.content}"</h5>
@@ -380,9 +380,9 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 items-center text-left my-20 mb-20">
             <motion.div
-              whileInView={{ opacity: 1 }}
-              initial={{ opactiy: 0 }}
-              transition={{ duration: 2 }}
+              whileInView={{ y: 0 }}
+              initial={{ y: 200 }}
+              transition={{ duration: 1 }}
             >
               <div className="hidden md:block">
                 <img className="w-3/4 mx-auto" src={Pic} alt="" />
